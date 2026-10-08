@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sadia ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap');
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:#170d12;color:#fff7f2;font-family:Montserrat,sans-serif;overflow-x:hidden}
+section{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;padding:60px 20px}
+.hero{background:linear-gradient(120deg,rgba(12,5,8,.72),rgba(43,16,27,.48)),url('images/memory1.png') center/cover fixed}
+.overlay{position:absolute;inset:0;background:radial-gradient(circle at 75% 45%,rgba(255,185,195,.18),transparent 34%),linear-gradient(180deg,transparent 70%,#170d12)}
+.content{position:relative;z-index:2;max-width:1100px;width:100%;text-align:center}
+.kicker{letter-spacing:4px;text-transform:uppercase;font-size:12px;color:#f7c9bb}
+h1{font-family:'Great Vibes',cursive;font-size:clamp(65px,13vw,145px);font-weight:400;margin:10px 0;color:#ffd7ce;text-shadow:0 5px 30px #000}
+h2{font-family:'Great Vibes',cursive;font-size:clamp(48px,8vw,90px);font-weight:400;color:#f9c5bb;margin:0 0 12px}
+p{line-height:1.9;color:#f3ddd8;font-size:15px}
+.subtitle{font-family:'Cormorant Garamond',serif;font-size:24px;max-width:650px;margin:0 auto 30px}
+.btn{border:1px solid rgba(255,205,196,.55);background:rgba(255,150,160,.18);color:white;padding:15px 28px;border-radius:40px;font-size:15px;cursor:pointer;backdrop-filter:blur(8px);transition:.3s}
+.btn:hover{transform:translateY(-3px);background:rgba(255,150,160,.32)}
+.cake{font-size:80px;margin-bottom:10px;filter:drop-shadow(0 10px 20px rgba(255,170,170,.25))}
+.birthday{background:radial-gradient(circle at 25% 30%,#5b2636,transparent 35%),radial-gradient(circle at 80% 70%,#40202e,transparent 35%),#170d12}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:22px;margin-top:35px}
+.card{background:#fff8f0;padding:10px 10px 28px;transform:rotate(var(--r));box-shadow:0 15px 35px rgba(0,0,0,.35);color:#42252a}
+.card img{width:100%;height:290px;object-fit:cover;display:block}
+.card span{font-family:'Great Vibes',cursive;font-size:25px;display:block;padding-top:12px}
+.story{background:linear-gradient(135deg,#24131a,#130a0e)}
+.letter{max-width:850px;margin:auto;background:rgba(255,246,235,.96);color:#42252a;padding:45px 35px;border-radius:4px;box-shadow:0 25px 70px rgba(0,0,0,.4);text-align:left;position:relative}
+.letter:before{content:'♡';position:absolute;right:25px;top:12px;font-size:60px;color:#d48d91;opacity:.35}
+.letter p{color:#5c3c40;font-family:'Cormorant Garamond',serif;font-size:21px;line-height:1.7}
+.signature{font-family:'Great Vibes',cursive;font-size:34px;text-align:right;color:#a75e69}
+.future{background:linear-gradient(120deg,rgba(12,5,8,.45),rgba(25,8,15,.8)),url('images/memory5.png') center/cover fixed}
+.final{font-family:'Cormorant Garamond',serif;font-size:22px}
+.hearts{position:fixed;inset:0;pointer-events:none;z-index:10;overflow:hidden}
+.heart{position:absolute;bottom:-30px;animation:float 7s linear forwards;opacity:.75;color:#ffb4b7}
+@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+.reveal{opacity:0;transform:translateY(30px);transition:1s}.show{opacity:1;transform:none}
+@media(max-width:600px){section{padding:50px 16px}.hero{background-attachment:scroll}.future{background-attachment:scroll}.card img{height:240px}.letter{padding:30px 22px}}
+</style>
+</head>
+<body>
+
+<div id="lockScreen" style="position:fixed;inset:0;z-index:9999;background:radial-gradient(circle at 50% 35%,#5b2636,#170d12 65%);display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;">
+  <div style="max-width:420px;width:100%;padding:38px 26px;border:1px solid rgba(255,205,196,.35);border-radius:24px;background:rgba(255,255,255,.06);backdrop-filter:blur(14px);box-shadow:0 25px 80px rgba(0,0,0,.45);">
+    <div style="font-size:54px;margin-bottom:8px;">🔐</div>
+    <div style="font-family:Montserrat,sans-serif;letter-spacing:3px;text-transform:uppercase;font-size:11px;color:#f7c9bb;">A special surprise for</div>
+    <div style="font-family:'Great Vibes',cursive;font-size:58px;color:#ffd7ce;margin:4px 0 8px;">Sadia ♡</div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:21px;line-height:1.5;color:#f3ddd8;margin:0 0 24px;">Only someone very special can unlock this little surprise…</p>
+    <input id="codeInput" type="password" inputmode="numeric" maxlength="8" placeholder="Enter your special code"
+      style="width:100%;padding:15px 16px;border-radius:30px;border:1px solid rgba(255,205,196,.4);background:rgba(0,0,0,.2);color:white;text-align:center;font-size:18px;outline:none;">
+    <button onclick="unlockSite()" style="margin-top:14px;border:1px solid rgba(255,205,196,.55);background:rgba(255,150,160,.2);color:white;padding:14px 28px;border-radius:40px;font-size:15px;cursor:pointer;">Unlock My Surprise ♡</button>
+    <div id="errorMsg" style="display:none;color:#ffc4c4;margin-top:14px;font-size:13px;">That's not the special code. Try again ❤️</div>
+  </div>
+</div>
+
+<div class="hearts" id="hearts"></div>
+
+<section class="hero">
+<div class="overlay"></div>
+<div class="content">
+<div class="kicker">A little surprise, made with love</div>
+<h1>Sadia ♡</h1>
+<div class="subtitle">For the girl who makes my world a little more beautiful every day…</div>
+<button class="btn" onclick="openSurprise()">♡ Tap to Open</button>
+</div>
+</section>
+
+<section class="birthday">
+<div class="content reveal">
+<div class="cake">🎂</div>
+<div class="kicker">Today is all about you</div>
+<h2>Happy Birthday, Sadia ♡</h2>
+<p class="subtitle">May your day be as beautiful, kind and special as you are.<br>You deserve all the love, happiness and beautiful moments in the world.</p>
+<button class="btn" onclick="makeWish()">✨ Make a Wish</button>
+</div>
+</section>
+
+<section class="story">
+<div class="content reveal">
+<div class="kicker">Every picture has a memory</div>
+<h2>Our Little Story ♡</h2>
+<div class="grid">
+<div class="card" style="--r:-2deg"><img src="images/memory1.png"><span>My Favourite ♡</span></div>
+<div class="card" style="--r:2deg"><img src="images/memory2.png"><span>That Beautiful Smile ♡</span></div>
+<div class="card" style="--r:-1deg"><img src="images/memory3.jpg"><span>My Happiness ♡</span></div>
+<div class="card" style="--r:2deg"><img src="images/memory4.jpg"><span>My Everything ♡</span></div>
+<div class="card" style="--r:-2deg"><img src="images/memory5.jpg"><span>Simply You ♡</span></div>
+</div>
+</div>
+</section>
+
+<section class="story">
+<div class="content reveal">
+<div class="kicker">A few words from my heart</div>
+<h2>For You, Sadia ♡</h2>
+<div class="letter">
+<p>My Dearest Sadia,</p>
+<p>I may not always find the perfect words, but I hope you always know how special you are to me. Having you in my life makes ordinary moments feel beautiful. Your smile brings so much warmth, peace and happiness into my world.</p>
+<p>On your birthday, I just want to remind you how much you mean to me. I hope this new year of your life brings you countless reasons to smile, beautiful memories to keep, and every happiness your heart wishes for.</p>
+<p>And if there is one thing I want you to remember today, it is this: <b>you are truly one of a kind, and I feel lucky to have you in my life.</b></p>
+<div class="signature">Yours, always ♡</div>
+</div>
+</div>
+</section>
+
+<section class="future">
+<div class="overlay"></div>
+<div class="content reveal">
+<div class="kicker">And this is only the beginning of our story…</div>
+<h2>Future Mrs. Sadia ♡</h2>
+<p class="final">More adventures. More memories. More laughter.<br>And hopefully, a lifetime of beautiful moments together.</p>
+<h2 style="font-size:55px;margin-top:35px">Happy Birthday, My Favorite Person</h2>
+<button class="btn" onclick="finalSurprise()">I Love You ♡</button>
+</div>
+</section>
+
+<script>
+
+function unlockSite(){
+  const code = document.getElementById('codeInput').value;
+  if(code === '10102003'){
+    const lock = document.getElementById('lockScreen');
+    lock.style.transition = 'opacity .8s ease';
+    lock.style.opacity = '0';
+    setTimeout(()=>lock.remove(), 850);
+    hearts(30);
+  } else {
+    const msg = document.getElementById('errorMsg');
+    msg.style.display='block';
+  }
+}
+document.getElementById('codeInput').addEventListener('keydown', e=>{
+  if(e.key==='Enter') unlockSite();
+});
+
+function openSurprise(){
+  document.querySelector('.birthday').scrollIntoView({behavior:'smooth'});
+  hearts(20);
+}
+function makeWish(){
+  hearts(35);
+  alert("Make your wish, Sadia… ✨ May it come true. ❤️");
+}
+function finalSurprise(){
+  hearts(70);
+  setTimeout(()=>alert("Happy Birthday, Sadia! ❤️\nYou are and will always be very special to me."),400);
+}
+function hearts(n){
+  const box=document.getElementById('hearts');
+  for(let i=0;i<n;i++){
+    const h=document.createElement('div'); h.className='heart'; h.innerHTML='♥';
+    h.style.left=Math.random()*100+'vw';
+    h.style.fontSize=(12+Math.random()*25)+'px';
+    h.style.animationDuration=(4+Math.random()*5)+'s';
+    box.appendChild(h); setTimeout(()=>h.remove(),9000);
+  }
+}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+</script>
+</body>
+</html>
